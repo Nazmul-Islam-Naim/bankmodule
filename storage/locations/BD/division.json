@@ -1,0 +1,57 @@
+[
+    {
+        "id": "1",
+        "name": "Barishal",
+        "bn_name": "\u09ac\u09b0\u09bf\u09b6\u09be\u09b2",
+        "lat": "22.70100200",
+        "lng": "90.35345100"
+    },
+    {
+        "id": "2",
+        "name": "Chattogram",
+        "bn_name": "\u099a\u099f\u09cd\u099f\u0997\u09cd\u09b0\u09be\u09ae",
+        "lat": "22.35685100",
+        "lng": "91.78318200"
+    },
+    {
+        "id": "3",
+        "name": "Dhaka",
+        "bn_name": "\u09a2\u09be\u0995\u09be",
+        "lat": "23.78062070",
+        "lng": "90.34928600"
+    },
+    {
+        "id": "4",
+        "name": "Khulna",
+        "bn_name": "\u0996\u09c1\u09b2\u09a8\u09be",
+        "lat": "22.84564100",
+        "lng": "89.54032800"
+    },
+    {
+        "id": "5",
+        "name": "Rajshahi",
+        "bn_name": "\u09b0\u09be\u099c\u09b6\u09be\u09b9\u09c0",
+        "lat": "24.36358900",
+        "lng": "88.62413500"
+    },
+    {
+        "id": "6",
+        "name": "Rangpur",
+        "bn_name": "\u09b0\u0982\u09aa\u09c1\u09b0",
+        "lat": "25.74389200",
+        "lng": "89.27522700"
+    },
+    {
+        "id": "7",
+        "name": "Sylhet",
+        "bn_name": "\u09b8\u09bf\u09b2\u09c7\u099f",
+        "lat": "24.89492900",
+        "lng": "91.86870600"
+    },
+    {
+        "id": "8",
+        "name": "Mymensingh",
+        "bn_name": "\u09ae\u09df\u09ae\u09a8\u09b8\u09bf\u0982\u09b9",
+        "lat": "24.74714900",
+        "lng": "90.42027300"
+    }]

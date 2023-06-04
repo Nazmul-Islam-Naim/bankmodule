@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Services;
+
+use App\Contracts\Repositories\{{CLASS_NAME}}RepositoryInterface;
+
+
+class {{CLASS_NAME}}Service extends CoreService
+{
+    protected $name = "{{NAME}}";
+
+    public function __construct()
+    {
+
+        $this->repository = app()->make({{CLASS_NAME}}RepositoryInterface::class);
+    }
+
+
+}

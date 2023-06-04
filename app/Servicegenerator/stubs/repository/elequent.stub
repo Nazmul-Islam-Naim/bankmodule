@@ -1,0 +1,14 @@
+<?php
+
+namespace App\Repositories\Elequent;
+
+use App\Contracts\Repositories\{{CLASS_NAME}}RepositoryInterface;
+use App\Models\{{CLASS_NAME}};
+
+class {{CLASS_NAME}}Repository extends BaseRepository  implements {{CLASS_NAME}}RepositoryInterface
+{
+
+    public $model = {{CLASS_NAME}}::class;
+
+
+}

@@ -1,0 +1,11 @@
+{
+    "Table not found in the form request":"Table not found in the form request",
+    "Error while deleting resource":"Error while deleting resource",
+    "Something went wrong while getting data from database":"Something went wrong while getting data from database",
+    "The requested resource was not found in the database":"The requested resource was not found in the database",
+    "Error while storing resource in the database":"Error while storing resource in the database",
+    "Error while updating resource in the database":"Error while updating resource in the database",
+    "Invalid input Key":"Invalid input Key",
+    "Something went wrong while restoring data in database":"Something went wrong while restoring data in database",
+    "Items are fetched successfully":": items are fetched successfully"
+}
