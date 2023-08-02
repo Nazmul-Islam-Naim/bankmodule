@@ -13,12 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('cheque_numbers', function (Blueprint $table) {
+        Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('cheque_book_id')->constrained('cheque_books')->onDelete('cascade');
-            $table->string('cheque_number');
-            $table->boolean('status')->default(true);
-            $table->softDeletes();
             $table->timestamps();
         });
     }
@@ -30,6 +26,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('cheque_numbers');
+        Schema::dropIfExists('users');
     }
 };

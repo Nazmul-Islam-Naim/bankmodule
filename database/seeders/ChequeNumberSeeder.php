@@ -3,10 +3,10 @@
 namespace Database\Seeders;
 
 use App\Enum\ChequeStatus;
-use App\Models\ChequeBook;
-use App\Models\ChequeNumber;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Services\ChequeBookService;
+use App\Services\ChequeNumberService;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Crypt;
 
 class ChequeNumberSeeder extends Seeder
 {
@@ -17,9 +17,11 @@ class ChequeNumberSeeder extends Seeder
      */
     public function run()
     {
-        ChequeNumber::updateOrCreate([
-            'cheque_book_id' => ChequeBook::first()->id,
-            'cheque_no' => 10000,
+        $chequeNumberService = new ChequeNumberService();
+        $chequeBooks = new ChequeBookService();
+        $chequeNumberService->store([
+            'cheque_book_id' => Crypt::encryptString($chequeBooks->index()->first()->id),
+            'cheque_number' => '123-456-78901234-567',
             'status' => ChequeStatus::getFromName('Unused')->value
         ]);
     }

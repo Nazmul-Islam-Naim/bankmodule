@@ -18,6 +18,8 @@ return new class extends Migration
             $table->foreignId('bank_id')->constrained('banks')->onDelete('cascade');
             $table->string('title',50);
             $table->string('slug');
+            $table->string('book_number')->unique();
+            $table->integer('pages')->default(1)->unsigned();
             $table->boolean('status')->default(true);
             $table->softDeletes();
             $table->timestamps();

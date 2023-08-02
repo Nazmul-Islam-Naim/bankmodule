@@ -3,7 +3,9 @@
 namespace App\Http\Requests\ChequeBook;
 
 use App\Helpers\Helper;
+use App\Models\ChequeBook;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
 class UpdateRequest extends FormRequest
 {
@@ -27,7 +29,9 @@ class UpdateRequest extends FormRequest
         
         return [
             'bank_id' => ['required'],
-            'title' => ['required', 'max:50']
+            'title' => ['required', 'max:50'],
+            'book_number' => ['required', Rule::unique(ChequeBook::class)->ignore($this->chequeBook)],
+            'pages' => ['required', 'numeric']
         ];
     }
 }

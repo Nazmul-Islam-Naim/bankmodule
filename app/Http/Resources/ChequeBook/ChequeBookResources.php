@@ -22,6 +22,8 @@ class ChequeBookResources extends JsonResource
             'bank_slug' => $this->bank->slug,
             'title' => $this->title,
             'slug' => $this->slug,
+            'book_number' => $this->book_number,
+            'pages' => $this->pages,
             'status' => (bool)$this->status,
         ];
     }

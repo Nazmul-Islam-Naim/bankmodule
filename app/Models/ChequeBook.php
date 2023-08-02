@@ -10,7 +10,7 @@ class ChequeBook extends Model
 {
     use HasFactory,SoftDeletes;
     protected $table = 'cheque_books';
-    protected $fillable = [ 'bank_id', 'title', 'slug', 'status'];
+    protected $fillable = [ 'bank_id', 'title', 'slug', 'book_number', 'pages', 'status'];
 
     //relationship
 

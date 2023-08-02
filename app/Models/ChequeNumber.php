@@ -10,7 +10,7 @@ class ChequeNumber extends Model
 {
     use HasFactory, SoftDeletes;
     protected $table = 'cheque_numbers';
-    protected $fillable = ['cheque_book_id', 'cheque_no', 'status'];
+    protected $fillable = ['cheque_book_id', 'cheque_number', 'status'];
 
     //relation
 

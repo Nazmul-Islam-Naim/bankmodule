@@ -20,7 +20,7 @@ class ChequeNumberResources extends JsonResource
             'id' => Crypt::encrypt($this->id),  
             'cheque_book_id' => Crypt::encrypt($this->chequeBook->id),  
             'cheque_book_title' => $this->chequeBook->title,  
-            'cheque_no' => $this->cheque_no,  
+            'cheque_number' => $this->cheque_number,   
             'status' => ChequeStatus::getFromValue($this->status)->name,  
           ];
     }
